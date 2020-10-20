@@ -32,6 +32,17 @@ body {
   color: var(--gray-text);
   background-color: var(--white);
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
 .list {
   margin: 0;
   padding: 0;
@@ -211,4 +222,12 @@ font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.03em;
 color: var(--gray-text);
+}
+.container {
+  
+}
+.useful-links {
+  align-items: center;
+  text-align: center;
+  /* display: inline-block; */
 }
