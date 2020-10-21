@@ -178,53 +178,53 @@ footer {
   background-color: var(--dark-gray);
 }
 .location {
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71
-letter-spacing: 0.03em;
-color: var(--white);
-text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71
+  letter-spacing: 0.03em;
+  color: var(--white);
+  text-decoration: none;
 }
 
 .mail{
-font-weight: 400;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
-text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 .button{
-font-family: Roboto;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--black-text);
-background-color: var(--light-gray);
-border-radius: 4px;
-padding: 5.76px 22.28px;
-border: 2px solid transparent;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-text);
+  background-color: var(--light-gray);
+  border-radius: 4px;
+  padding: 5.76px 22.28px;
+  border: 2px solid transparent;
 }
 .button:hover,
 .button:focus {
-background-color: var(--accent);
-color: var(--white);
+  background-color: var(--accent);
+  color: var(--white);
 }
 .project{
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color: var(--black-text);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--black-text);
 }
 .project-item{
-font-weight: 400;
-font-size: 16px;
-line-height: 1.87;
-letter-spacing: 0.03em;
-color: var(--gray-text);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--gray-text);
 }
 .container-features {
   padding: 94px 215px;
@@ -248,8 +248,9 @@ color: var(--gray-text);
   padding-left: 483.59px;
 }
 .useful-button li {
-margin-right: 8.1px;
+  display: inline-block;
+  margin-right: 8.1px;
 }
 .useful-button li:last-child {
-margin-right: 0;
+  margin-right: 0;
 }
