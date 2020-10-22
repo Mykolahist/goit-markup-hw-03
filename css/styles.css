@@ -131,6 +131,11 @@ p {
   padding: 10px 32px;
   min-width: 200px;
 }
+.features-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: cyan;
+}
 .features {
   font-weight: 700;
   font-size: 14px;
@@ -146,6 +151,10 @@ p {
   letter-spacing: 0.03em;
   color: var(--gray-text);
 }
+.job-section {
+  padding-bottom: 94px;
+  background-color: blueviolet;
+}
 .job-title {
   font-weight: 700;
   font-size: 36px;
@@ -156,6 +165,7 @@ p {
   margin-bottom: 50px;
 }
 .team {
+  padding-bottom: 94px;
   background-color: var(--light-gray);
 }
 .name {
@@ -167,6 +177,8 @@ p {
   color: var(--black-text);
 }
 .employment {
+  margin-bottom: 0;
+  padding-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.187;
@@ -212,6 +224,15 @@ footer {
   background-color: var(--accent);
   color: var(--white);
 }
+.useful-button {
+  padding-top: 94px;
+  padding-bottom: 32.65px;
+  background-color: darkolivegreen;
+}
+.project-section {
+  padding-bottom: 148px;
+  background-color: darkmagenta;
+}
 .project{
   font-weight: 700;
   font-size: 18px;
@@ -220,37 +241,16 @@ footer {
   color: var(--black-text);
 }
 .project-item{
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--gray-text);
 }
-.container-features {
-  padding: 94px 215px;
-}
-/* .list li {
-  align-items: center;
-  text-align: center;
-  display: inline-block;
-} */
-.inline-block li {
-  display: inline-block;
-  margin-right: 30px;
-}
-.inline-block li:last-child {
-  margin-right: 0;
-}
-.useful-button {
-  padding-top: 94px;
-  padding-right: 497.58px;
-  padding-bottom: 32.65px;
-  padding-left: 483.59px;
-}
-.useful-button li {
-  display: inline-block;
-  margin-right: 8.1px;
-}
-.useful-button li:last-child {
-  margin-right: 0;
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid violet;
 }
