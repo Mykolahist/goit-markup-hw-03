@@ -1,13 +1,3 @@
-html{
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 /* background color: 
 #ffffff - main
 #2f303a - hero and footer;
@@ -27,6 +17,18 @@ color: rgba(255, 255, 255, 0.6); - footer contact */
   --black-text: #212121;
   --gray-text: #757575;
 }
+
+/* утилиты */
+html{
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   color: var(--gray-text);
@@ -48,32 +50,15 @@ p {
   padding: 0;
   list-style: none;
 }
-.navigation {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
-  color: var(--black-text);
-  text-decoration: none;
+
+/* шапка */
+.main-top {
+  display: flex;
+  align-items: center;
 }
-.navigation:hover,
-.navigation:focus {
-  color: var(--accent);
-}
-.contacts {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
-  color: var(--gray-text);
-  text-decoration: none;
-}
-.contacts:hover,
-.contacts:focus {
-  color: var(--accent);
-}
-.navigation.current {
-  color: var(--accent);
+.nav {
+  display: flex;
+  align-items: center;
 }
 .logo-top {
   font-family: Raleway, sans-serif;
@@ -93,15 +78,53 @@ p {
   color: var(--accent);
   text-decoration: none;
 }
-.logo-bottom {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  color: var(--white);
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.navigation {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: var(--black-text);
   text-decoration: none;
 }
+.navigation:hover,
+.navigation:focus {
+  color: var(--accent);
+}
+.schedule-contacts {
+  display: flex;
+  margin-left: auto;
+}
+ .schedule-contacts .item + .item {
+   margin-left: 50px;
+ }
+.contacts {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: var(--gray-text);
+  text-decoration: none;
+}
+.contacts:hover,
+.contacts:focus {
+  color: var(--accent);
+}
+.navigation.current {
+  color: var(--accent);
+}
+
+/* блок герой */
 .hero {
   background-color: var(--dark-gray);
   text-align: center;
@@ -131,12 +154,21 @@ p {
   padding: 10px 32px;
   min-width: 200px;
 }
+
+/* блок особенности */
 .features-section {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: cyan;
 }
+.features-schedule {
+  display: flex;
+}
+.features-item:not(:last-child) {
+  margin-right: 30px;
+}
 .features {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
@@ -151,6 +183,8 @@ p {
   letter-spacing: 0.03em;
   color: var(--gray-text);
 }
+
+/* блок наши роботы */
 .job-section {
   padding-bottom: 94px;
   background-color: blueviolet;
@@ -164,11 +198,29 @@ p {
   color: var(--black-text);
   margin-bottom: 50px;
 }
+.job-schedule {
+  display: flex;
+}
+.job-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* блок команда */
 .team {
   padding-bottom: 94px;
   background-color: var(--light-gray);
 }
+.team-schedule {
+  display: flex;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.team-photo {
+  margin-bottom: 30px;
+}
 .name {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.187;
@@ -186,9 +238,20 @@ p {
   letter-spacing: 0.03em;
   color: var(--gray-text);
 }
+/* подвал */
 footer {
   background-color: var(--dark-gray);
 }
+.logo-bottom {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: var(--white);
+  text-decoration: none;
+}
+
 .location {
   font-weight: 400;
   font-size: 14px;
@@ -206,12 +269,13 @@ footer {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
+
+/* блок фильтры */
 .button{
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-text);
   background-color: var(--light-gray);
@@ -224,10 +288,16 @@ footer {
   background-color: var(--accent);
   color: var(--white);
 }
-.useful-button {
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 94px;
   padding-bottom: 32.65px;
   background-color: darkolivegreen;
+}
+.filters-item {
+  display: block;
 }
 .project-section {
   padding-bottom: 148px;
