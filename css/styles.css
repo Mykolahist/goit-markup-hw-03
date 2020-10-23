@@ -293,11 +293,11 @@ footer {
   align-items: center;
   justify-content: center;
   padding-top: 94px;
-  padding-bottom: 32.65px;
+  padding-bottom: 50px;
   background-color: darkolivegreen;
 }
-.filters-item {
-  display: block;
+.filters-item:not(:last-child) {
+  margin-right: 8px;
 }
 .project-section {
   padding-bottom: 148px;
